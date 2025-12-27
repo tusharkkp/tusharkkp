@@ -18,15 +18,16 @@ I enjoy converting complex ideas into **clean, scalable, and production-ready so
 ---
 
 ## 🔭 Currently Working On
+- **ASNA** — a real-time, human-centric digital fraud awareness system that intervenes *before* irreversible actions  
+- **DataPilot** — a smart data analysis & visualization platform for extracting insights efficiently  
 - Full-stack and AI projects like **InternHub**, **EcoTravel**, and **HealthAssist**
-- Improving backend scalability and system architecture
-- Writing clean documentation and maintainable code
 
 ---
 
 ## 🤝 Open To Collaborate On
 - Hackathons & open-source projects  
 - AI/ML-powered applications  
+- Cybersecurity & fraud-prevention systems  
 - MERN stack & real-world problem-solving platforms  
 
 ---
@@ -42,6 +43,7 @@ I enjoy converting complex ideas into **clean, scalable, and production-ready so
 ## 🧠 Ask Me About
 - Hackathon execution strategies  
 - Full-stack project architecture  
+- Fraud detection & user-risk awareness systems  
 - Turning ideas into MVPs quickly  
 - Writing professional GitHub READMEs  
 
@@ -51,6 +53,8 @@ I enjoy converting complex ideas into **clean, scalable, and production-ready so
 
 | Project | Description | Tech |
 |------|------------|------|
+| **ASNA** | Real-time digital fraud awareness & prevention system | AI, Cybersecurity, Web |
+| **DataPilot** | Intelligent data analysis & visualization platform | Data, Web |
 | **InternHub** | Internship & opportunity management platform | MERN |
 | **EcoTravel** | Sustainable travel planning system | MERN |
 | **HealthAssist** | AI-based health analysis platform | AI, Web |
