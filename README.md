@@ -1,60 +1,78 @@
-# Hi 👋, I'm Tushar Kaldate
+<h1 align="center">Hi 👋, I'm Tushar Kaldate</h1>
+<h3 align="center">Full-Stack & AI Developer • Hackathon Builder • Problem Solver</h3>
 
-🎓 Computer Engineering Student  
-🚀 Full-Stack & AI Developer | Hackathon Builder  
-💡 Passionate about solving real-world problems through clean, scalable software
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=tusharkkp&label=Profile%20Views&color=0e75b6&style=flat" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,js,python,react,nodejs,express,git,github,figma&theme=dark" />
+</p>
+
+---
+
+## 🚀 About Me
+I am a **Computer Engineering student** focused on building **real-world, impact-driven software**.  
+I enjoy transforming complex ideas into **clean, scalable, and working products**, especially in **hackathon and fast-paced environments**.
 
 ---
 
 ## 🔭 Currently Working On
-- Building real-world full-stack and AI applications such as **InternHub**, **EcoTravel**, **HealthAssist**, and my personal **developer portfolio**
-- Improving project architecture, performance, and documentation quality
+- Full-stack and AI projects like **InternHub**, **EcoTravel**, **HealthAssist**
+- Improving backend scalability and system architecture
+- Writing clean documentation and production-ready code
 
 ---
 
-## 👯 Looking to Collaborate On
-- Hackathon projects and open-source contributions  
+## 🤝 Open To Collaborate On
+- Hackathons & open-source projects  
 - AI/ML-powered applications  
-- MERN stack and impact-driven web platforms  
-
----
-
-## 🤝 Looking for Help With
-- Scaling backend systems  
-- Advanced authentication & API optimization  
-- Deploying production-ready applications  
+- MERN stack & real-world problem-solving platforms  
 
 ---
 
 ## 🌱 Currently Learning
-- Advanced JavaScript & React  
-- Node.js, Express & system design  
-- AI/ML integration in web apps  
-- Cloud deployment & security best practices  
+- Advanced React & Backend Engineering  
+- System Design & API Optimization  
+- AI/ML integration in web products  
+- Secure and scalable deployments  
 
 ---
 
-## 💬 Ask Me About
-- Hackathons & rapid prototyping  
+## 🧠 Ask Me About
+- Hackathon execution strategies  
 - Full-stack project architecture  
-- Writing clean READMEs & presenting projects  
-- Turning ideas into working MVPs  
+- Turning ideas into MVPs fast  
+- Writing professional GitHub READMEs  
 
 ---
 
-## 🛠 Tech Stack
-**Languages:** C++, JavaScript, Python  
-**Frontend:** React, HTML, CSS  
-**Backend:** Node.js, Express  
-**Tools:** Git, GitHub, Figma, Cursor AI  
+## 🔥 Featured Projects
+
+| Project | Description | Tech |
+|------|------------|------|
+| **InternHub** | Internship & opportunity management platform | MERN |
+| **EcoTravel** | Sustainable travel planning system | MERN |
+| **HealthAssist** | AI-based health analysis platform | AI, Web |
+| **Portfolio** | Personal developer portfolio | React |
 
 ---
 
-## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tusharkkp&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tusharkkp&layout=compact&theme=radical)
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tusharkkp&show_icons=true&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tusharkkp&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tusharkkp&layout=compact&theme=radical&hide_border=true" />
+</p>
 
 ---
 
 ## ⚡ Fun Fact
-I enjoy turning complex, messy ideas into clean, working products — especially under hackathon pressure.
+I enjoy building under pressure — **deadlines bring out my best work**.
