@@ -13,14 +13,14 @@
 
 ## 🚀 About Me
 I am a **Computer Engineering student** focused on building **real-world, impact-driven software**.  
-I enjoy transforming complex ideas into **clean, scalable, and working products**, especially in **hackathon and fast-paced environments**.
+I enjoy converting complex ideas into **clean, scalable, and production-ready solutions**, especially in **hackathon and fast-paced environments**.
 
 ---
 
 ## 🔭 Currently Working On
-- Full-stack and AI projects like **InternHub**, **EcoTravel**, **HealthAssist**
+- Full-stack and AI projects like **InternHub**, **EcoTravel**, and **HealthAssist**
 - Improving backend scalability and system architecture
-- Writing clean documentation and production-ready code
+- Writing clean documentation and maintainable code
 
 ---
 
@@ -32,8 +32,8 @@ I enjoy transforming complex ideas into **clean, scalable, and working products*
 ---
 
 ## 🌱 Currently Learning
-- Advanced React & Backend Engineering  
-- System Design & API Optimization  
+- Advanced React & backend engineering  
+- System design & API optimization  
 - AI/ML integration in web products  
 - Secure and scalable deployments  
 
@@ -42,7 +42,7 @@ I enjoy transforming complex ideas into **clean, scalable, and working products*
 ## 🧠 Ask Me About
 - Hackathon execution strategies  
 - Full-stack project architecture  
-- Turning ideas into MVPs fast  
+- Turning ideas into MVPs quickly  
 - Writing professional GitHub READMEs  
 
 ---
@@ -61,18 +61,14 @@ I enjoy transforming complex ideas into **clean, scalable, and working products*
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tusharkkp&show_icons=true&theme=radical&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=tusharkkp&show_icons=true&theme=tokyonight" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tusharkkp&theme=radical&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tusharkkp&layout=compact&theme=radical&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tusharkkp&layout=compact&theme=tokyonight" />
 </p>
 
 ---
 
 ## ⚡ Fun Fact
-I enjoy building under pressure — **deadlines bring out my best work**.
+I perform best under pressure — **deadlines sharpen my focus and execution**.
