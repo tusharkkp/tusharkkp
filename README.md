@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Tushar Kaldate</h1>
+<!-- <h1 align="center">Hi 👋, I'm Tushar Kaldate</h1>
 <h3 align="center">Full-Stack & AI Developer • Hackathon Builder • Problem Solver</h3>
 
 <p align="center">
@@ -75,4 +75,4 @@ I enjoy converting complex ideas into **clean, scalable, and production-ready so
 ---
 
 ## ⚡ Fun Fact
-I perform best under pressure — **deadlines sharpen my focus and execution**.
+I perform best under pressure — **deadlines sharpen my focus and execution**. -->
