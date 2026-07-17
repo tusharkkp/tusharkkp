@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" preserveAspectRatio="xMidYMid meet" role="img" aria-label="GitHub profile header for Tushar Kaldate">
+  <defs>
+    <!-- Color palettes (dark) -->
+    <linearGradient id="accentGradDark" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+      <!-- animate gradient shift -->
+      <animate attributeName="x1" values="0%;20%;0%" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;120%;100%" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="borderShimmerDark" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.02)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+      <animate attributeName="x1" values="-20%;100%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;120%" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- ASCII fill gradient (cyan-purple) -->
+    <linearGradient id="asciiGradDark" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="40%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+      <animateTransform attributeName="gradientTransform" type="translate" dur="10s" values="0 0;10 0;0 0" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Terminal panel background gradient -->
+    <linearGradient id="panelGradDark" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0B1220" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Soft glow for pills -->
+    <radialGradient id="pillGlowDark" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Noise / grain filter -->
+    <filter id="noiseFilterDark">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise">
+        <animate attributeName="baseFrequency" values="0.8;0.7;0.8" dur="12s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+
+    <!-- Glass blur -->
+    <filter id="glassBlurDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0
+                                           0 1 0 0 0
+                                           0 0 1 0 0
+                                           0 0 0 0.9 0"/>
+    </filter>
+
+    <!-- Drop shadow -->
+    <filter id="dropShadowDark" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="10" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="18" result="blurOff"/>
+      <feColorMatrix in="blurOff" type="matrix" values="0 0 0 0 0
+                                                        0 0 0 0 0
+                                                        0 0 0 0 0
+                                                        0 0 0 0.35 0" result="shadow"/>
+      <feComposite in="shadow" in2="SourceGraphic" operator="over"/>
+    </filter>
+
+    <!-- Cursor gradient -->
+    <linearGradient id="cursorGradDark" x1="0" x2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <!-- Clip for rounded canvas -->
+    <clipPath id="canvasClip">
+      <rect x="6" y="6" width="1168" height="598" rx="18" ry="18"/>
+    </clipPath>
+
+    <!-- Mask for typing reveal (we reuse by giving different IDs) -->
+    <mask id="maskLine">
+      <rect id="maskRect" x="0" y="0" width="0" height="100%" fill="#fff"/>
+    </mask>
+
+  </defs>
+
+  <!-- Outer background -->
+  <g>
+    <rect width="1180" height="610" rx="18" ry="18" fill="#030712"/>
+    <!-- subtle radial background glows -->
+    <circle cx="220" cy="120" r="220" fill="#0ea5e9" opacity="0.04">
+      <animate attributeName="cx" values="200;240;200" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="480" r="300" fill="#7c3aed" opacity="0.035">
+      <animate attributeName="cx" values="980;940;980" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="40" r="180" fill="#10b981" opacity="0.03">
+      <animate attributeName="cy" values="40;60;40" dur="16s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Rounded container with glass look -->
+  <g clip-path="url(#canvasClip)">
+    <!-- faint border & shimmer -->
+    <rect x="12" y="12" width="1156" height="586" rx="14" ry="14" fill="none" stroke="url(#borderShimmerDark)" stroke-width="1.5" opacity="0.95"/>
+
+    <!-- Main two-column layout -->
+    <!-- Left: ASCII area (38%) -->
+    <g id="left" transform="translate(28,28)">
+      <rect x="0" y="0" width="418" height="554" rx="12" ry="12" fill="url(#panelGradDark)" opacity="0.95" filter="url(#glassBlurDark)"/>
+      <!-- subtle inner border -->
+      <rect x="0.75" y="0.75" width="416.5" height="552.5" rx="11.25" ry="11.25" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+      <!-- scanline -->
+      <rect x="-460" y="-80" width="920" height="120" fill="url(#asciiGradDark)" opacity="0.08" transform="rotate(-6 0 0)">
+        <animate attributeName="x" values="-460;460;-460" dur="9s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- ASCII block group (floating) -->
+      <g id="asciiGroup" transform="translate(36,72)">
+        <!-- floating motion -->
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" values="36,72;36,68;36,72" dur="6s" repeatCount="indefinite"/>
+
+        <!-- text background glow -->
+        <rect x="-8" y="-24" width="360" height="288" rx="8" ry="8" fill="url(#pillGlowDark)" opacity="0.07"/>
+
+        <!-- ASCII text lines -->
+        <text font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace" font-size="14" fill="url(#asciiGradDark)" letter-spacing="1.2" xml:space="preserve">
+          <!-- each tspan is masked to reveal line-by-line -->
+          <tspan id="line1" x="0" y="0">               _______</tspan>
+          <tspan id="line2" x="0" y="20">             /  _____ \</tspan>
+          <tspan id="line3" x="0" y="40">            |  /     \ |</tspan>
+          <tspan id="line4" x="0" y="60">            | |  O O | |</tspan>
+          <tspan id="line5" x="0" y="80">            | |  \_/ | |</tspan>
+          <tspan id="line6" x="0" y="100">            |  \_____/ |</tspan>
+          <tspan id="line7" x="0" y="120">             \_______/</tspan>
+          <tspan id="line8" x="0" y="150">        ───  Frontend · Full Stack</tspan>
+          <tspan id="line9" x="0" y="170">        ───  Open Source · AI</tspan>
+        </text>
+
+        <!-- masks for each line to animate reveal -->
+        <rect id="m1" x="0" y="-12" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="1.2s" begin="0.6s" fill="freeze"/>
+        </rect>
+        <rect id="m2" x="0" y="8" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="1.0s" begin="1.9s" fill="freeze"/>
+        </rect>
+        <rect id="m3" x="0" y="28" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="0.9s" begin="3.0s" fill="freeze"/>
+        </rect>
+        <rect id="m4" x="0" y="48" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="0.9s" begin="3.9s" fill="freeze"/>
+        </rect>
+        <rect id="m5" x="0" y="68" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="0.9s" begin="4.8s" fill="freeze"/>
+        </rect>
+        <rect id="m6" x="0" y="88" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="0.9s" begin="5.7s" fill="freeze"/>
+        </rect>
+        <rect id="m7" x="0" y="108" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="0.9s" begin="6.6s" fill="freeze"/>
+        </rect>
+        <rect id="m8" x="0" y="138" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="1.0s" begin="7.6s" fill="freeze"/>
+        </rect>
+        <rect id="m9" x="0" y="158" width="0" height="28" fill="#fff" >
+          <animate attributeName="width" from="0" to="340" dur="1.0s" begin="8.6s" fill="freeze"/>
+        </rect>
+
+        <!-- apply masks to the tspan group via clipPath (grouped approach) -->
+        <clipPath id="asciiClip">
+          <use href="#m1"/>
+          <use href="#m2"/>
+          <use href="#m3"/>
+          <use href="#m4"/>
+          <use href="#m5"/>
+          <use href="#m6"/>
+          <use href="#m7"/>
+          <use href="#m8"/>
+          <use href="#m9"/>
+        </clipPath>
+
+        <g clip-path="url(#asciiClip)">
+          <!-- duplicate the text but as fill masked; already visible via same group - visual effect preserved -->
+        </g>
+
+        <!-- floating glow under ascii -->
+        <ellipse cx="160" cy="210" rx="120" ry="28" fill="#7C3AED" opacity="0.04">
+          <animate attributeName="opacity" values="0.02;0.06;0.02" dur="6s" repeatCount="indefinite"/>
+        </ellipse>
+
+        <!-- cursor blinking near last line -->
+        <rect x="312" y="154" width="6" height="12" rx="1" fill="url(#cursorGradDark)">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="8.6s"/>
+        </rect>
+
+      </g>
+    </g>
+
+    <!-- Right: professional terminal window -->
+    <g id="right" transform="translate(472,44)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="660" height="532" rx="14" ry="14" fill="url(#panelGradDark)" filter="url(#dropShadowDark)"/>
+      <!-- Inner glass highlight -->
+      <rect x="12" y="12" width="636" height="508" rx="10" ry="10" fill="transparent" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+      <!-- top bar with three dots -->
+      <g transform="translate(24,22)">
+        <circle cx="10" cy="10" r="6" fill="#F87171" opacity="0.95"/>
+        <circle cx="34" cy="10" r="6" fill="#FBBF24" opacity="0.95"/>
+        <circle cx="58" cy="10" r="6" fill="#34D399" opacity="0.95"/>
+      </g>
+
+      <!-- Content area -->
+      <g transform="translate(36,56)">
+        <!-- Greeting -->
+        <text x="0" y="8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="14" fill="#94A3B8">Hi 👋</text>
+
+        <!-- Name with typing mask -->
+        <g transform="translate(0,40)">
+          <text id="nameText" x="0" y="0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto" font-size="30" font-weight="600" fill="#F8FAFC">
+            I'm Tushar Kaldate
+          </text>
+          <!-- mask rectangle animated to produce typing -->
+          <rect x="0" y="-26" id="nameMask" width="0" height="34" fill="#fff">
+            <animate attributeName="width" from="0" to="330" begin="2.2s" dur="1.6s" fill="freeze" />
+          </rect>
+          <clipPath id="nameClip"><use href="#nameMask"/></clipPath>
+          <g clip-path="url(#nameClip)">
+            <use href="#nameText"/>
+          </g>
+
+          <!-- name cursor -->
+          <rect x="336" y="-22" width="6" height="26" rx="1" fill="url(#cursorGradDark)" opacity="0">
+            <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" begin="3.8s"/>
+          </rect>
+        </g>
+
+        <!-- roles typed one after another -->
+        <g transform="translate(0,90)">
+          <!-- line placeholders -->
+          <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace" font-size="15" fill="#94A3B8">Frontend Engineer</text>
+          <text x="0" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace" font-size="15" fill="#94A3B8">Full Stack Developer</text>
+          <text x="0" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace" font-size="15" fill="#94A3B8">Open Source Contributor</text>
+          <text x="0" y="84" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace" font-size="15" fill="#94A3B8">AI Enthusiast</text>
+
+          <!-- masks to animate typing per line -->
+          <rect x="0" y="-14" width="0" height="20" fill="#fff">
+            <animate attributeName="width" from="0" to="260" dur="1.2s" begin="4.2s" fill="freeze"/>
+          </rect>
+          <rect x="0" y="14" width="0" height="20" fill="#fff">
+            <animate attributeName="width" from="0" to="320" dur="1.2s" begin="5.6s" fill="freeze"/>
+          </rect>
+          <rect x="0" y="42" width="0" height="20" fill="#fff">
+            <animate attributeName="width" from="0" to="380" dur="1.2s" begin="7.0s" fill="freeze"/>
+          </rect>
+          <rect x="0" y="70" width="0" height="20" fill="#fff">
+            <animate attributeName="width" from="0" to="220" dur="1.0s" begin="8.4s" fill="freeze"/>
+          </rect>
+          <!-- clip group -->
+          <clipPath id="rolesClip">
+            <use href="#"/>
+          </clipPath>
+        </g>
+
+        <!-- Info list that reveals sequentially -->
+        <g transform="translate(0,190)" font-family="Inter, system-ui" font-size="13" fill="#94A3B8">
+          <text x="0" y="0" opacity="0">Location: Pune, India
+            <animate attributeName="opacity" from="0" to="1" begin="9.6s" dur="0.6s" fill="freeze"/></text>
+          <text x="0" y="22" opacity="0">Education: B.Tech — Computer Engineering
+            <animate attributeName="opacity" from="0" to="1" begin="10.2s" dur="0.6s" fill="freeze"/></text>
+          <text x="0" y="44" opacity="0">Current Focus: AI-powered UX & front-end infra
+            <animate attributeName="opacity" from="0" to="1" begin="10.8s" dur="0.6s" fill="freeze"/></text>
+          <text x="0" y="66" opacity="0">Portfolio: tusharkalp.dev (sample)
+            <animate attributeName="opacity" from="0" to="1" begin="11.4s" dur="0.6s" fill="freeze"/></text>
+          <text x="0" y="88" opacity="0">Email: hello@tusharkalp.dev
+            <animate attributeName="opacity" from="0" to="1" begin="12.0s" dur="0.6s" fill="freeze"/></text>
+        </g>
+
+        <!-- Skills section -->
+        <g transform="translate(0,270)">
+          <!-- layout pills two rows -->
+          <!-- pill template: rounded rect + text + glow -->
+          <!-- React -->
+          <g id="pillReact" transform="translate(0,0)" cursor="pointer">
+            <rect x="0" y="0" width="110" height="36" rx="18" ry="18" fill="url(#asciiGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)" />
+            <rect x="-14" y="-14" width="138" height="64" rx="30" fill="url(#pillGlowDark)" opacity="0.0"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">React</text>
+            <!-- hover scale via animateTransform -->
+            <animateTransform attributeName="transform" type="scale" begin="pillReact.mouseover" end="pillReact.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+            <animate attributeName="opacity" xlink:href="#pillReact" begin="pillReact.mouseover" dur="0.18s" to="1" fill="freeze"/>
+          </g>
+
+          <!-- Next pill -->
+          <g id="pillNext" transform="translate(130,0)" cursor="pointer">
+            <rect x="0" y="0" width="120" height="36" rx="18" ry="18" fill="url(#accentGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Next.js</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillNext.mouseover" end="pillNext.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <g id="pillNode" transform="translate(270,0)" cursor="pointer">
+            <rect x="0" y="0" width="110" height="36" rx="18" ry="18" fill="url(#asciiGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Node.js</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillNode.mouseover" end="pillNode.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <g id="pillTS" transform="translate(400,0)" cursor="pointer">
+            <rect x="0" y="0" width="94" height="36" rx="18" ry="18" fill="url(#accentGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">TypeScript</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillTS.mouseover" end="pillTS.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <!-- second row -->
+          <g id="pillTailwind" transform="translate(0,56)" cursor="pointer">
+            <rect x="0" y="0" width="106" height="36" rx="18" ry="18" fill="url(#asciiGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Tailwind</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillTailwind.mouseover" end="pillTailwind.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <g id="pillPython" transform="translate(140,56)" cursor="pointer">
+            <rect x="0" y="0" width="96" height="36" rx="18" ry="18" fill="url(#accentGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Python</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillPython.mouseover" end="pillPython.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <g id="pillDocker" transform="translate(280,56)" cursor="pointer">
+            <rect x="0" y="0" width="84" height="36" rx="18" ry="18" fill="url(#asciiGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Docker</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillDocker.mouseover" end="pillDocker.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+
+          <g id="pillPostgres" transform="translate(380,56)" cursor="pointer">
+            <rect x="0" y="0" width="100" height="36" rx="18" ry="18" fill="url(#accentGradDark)" opacity="0.12" stroke="rgba(255,255,255,0.04)"/>
+            <text x="20" y="22" font-family="Inter, system-ui" font-size="13" fill="#F8FAFC">Postgres</text>
+            <animateTransform attributeName="transform" type="scale" begin="pillPostgres.mouseover" end="pillPostgres.mouseout" dur="0.18s" values="1;1.05" fill="freeze"/>
+          </g>
+        </g>
+
+        <!-- Social icons bottom -->
+        <g transform="translate(0,378)">
+          <!-- GitHub -->
+          <g transform="translate(0,0)">
+            <circle cx="18" cy="18" r="16" fill="#0F172A" opacity="0.12"/>
+            <path d="M12 26c0-5.333 3.333-6.667 6-6.667" stroke="#F8FAFC" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.9"/>
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+          </g>
+          <!-- LinkedIn -->
+          <g transform="translate(54,0)">
+            <circle cx="18" cy="18" r="16" fill="#0F172A" opacity="0.12"/>
+            <rect x="12" y="12" width="2" height="8" fill="#F8FAFC"/>
+            <rect x="16" y="12" width="2" height="8" fill="#F8FAFC"/>
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="3.6s" repeatCount="indefinite"/>
+          </g>
+          <!-- Twitter -->
+          <g transform="translate(108,0)">
+            <circle cx="18" cy="18" r="16" fill="#0F172A" opacity="0.12"/>
+            <path d="M14 22c6-0.5 7-6 7-6" stroke="#F8FAFC" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+          </g>
+          <!-- Portfolio link -->
+          <g transform="translate(162,0)">
+            <circle cx="18" cy="18" r="16" fill="#0F172A" opacity="0.12"/>
+            <path d="M10 18h16" stroke="#F8FAFC" stroke-width="1.4" stroke-linecap="round"/>
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite"/>
+          </g>
+        </g>
+
+      </g>
+    </g>
+
+    <!-- Particles floating (subtle) -->
+    <g opacity="0.9">
+      <circle cx="540" cy="120" r="2" fill="#22D3EE" opacity="0.08">
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="860" cy="70" r="1.8" fill="#7C3AED" opacity="0.06">
+        <animateTransform attributeName="transform" type="translate" values="0,0;6,-6;0,0" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="720" cy="480" r="2.2" fill="#10B981" opacity="0.05">
+        <animateTransform attributeName="transform" type="translate" values="0,0;-6,6;0,0" dur="11s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- moving scanline overlay across entire canvas -->
+    <rect x="-1180" y="0" width="2400" height="610" fill="url(#asciiGradDark)" opacity="0.02">
+      <animate attributeName="x" from="-1180" to="1180" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.01;0.03;0.01" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- subtle noise overlay -->
+    <rect x="12" y="12" width="1156" height="586" rx="14" ry="14" fill="#000" opacity="0.018" filter="url(#noiseFilterDark)"/>
+
+    <!-- Glass reflection sweep -->
+    <linearGradient id="reflectDark" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.02"/>
+    </linearGradient>
+    <rect x="-400" y="18" width="520" height="120" rx="60" transform="rotate(-18 0 0)" fill="url(#reflectDark)" opacity="0.0">
+      <animate attributeName="x" from="-400" to="1400" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.08;0" dur="9s" repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+</svg>
